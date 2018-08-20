@@ -21019,13 +21019,9 @@ Added by Rob Johnson
 <label x="160.02" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="271.78" y1="109.22" x2="269.24" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="109.22" x2="266.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="111.76" x2="269.24" y2="109.22" width="0.1524" layer="91"/>
-<junction x="269.24" y="109.22"/>
-<pinref part="Q5" gate="G$1" pin="S"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<label x="266.7" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP3" gate="G$1" pin="4"/>
+<wire x1="193.04" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="187.96" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
@@ -21163,9 +21159,13 @@ Added by Rob Johnson
 <label x="238.76" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="10"/>
-<wire x1="193.04" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
-<label x="187.96" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="271.78" y1="109.22" x2="269.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="109.22" x2="266.7" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="111.76" x2="269.24" y2="109.22" width="0.1524" layer="91"/>
+<junction x="269.24" y="109.22"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<label x="266.7" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">
@@ -21590,7 +21590,12 @@ Added by Rob Johnson
 <label x="187.96" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO0_OUT" class="0">
+<net name="GPIO15_OUT" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="10"/>
+<wire x1="193.04" y1="88.9" x2="187.96" y2="88.9" width="0.1524" layer="91"/>
+<label x="187.96" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 <segment>
 <wire x1="281.94" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="109.22" x2="287.02" y2="109.22" width="0.1524" layer="91"/>
@@ -21599,11 +21604,6 @@ Added by Rob Johnson
 <pinref part="Q5" gate="G$1" pin="D"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <label x="287.02" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
-<wire x1="193.04" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
-<label x="187.96" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
