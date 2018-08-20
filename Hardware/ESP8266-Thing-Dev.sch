@@ -18615,12 +18615,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="VCC2">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="MOSFET-NCHANNEL">
 <wire x1="-3.6576" y1="2.413" x2="-3.6576" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="1.905" x2="-2.0066" y2="1.905" width="0.1524" layer="94"/>
@@ -18683,19 +18677,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="VCC2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -20266,28 +20247,18 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <part name="Q4" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R20" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="R21" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="P+2" library="SparkFun" deviceset="VCC" device="" value="LV"/>
-<part name="P+3" library="SparkFun" deviceset="VCC" device="" value="HV"/>
 <part name="Q5" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R22" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="R23" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="P+5" library="SparkFun" deviceset="VCC" device="" value="LV"/>
-<part name="P+6" library="SparkFun" deviceset="VCC" device="" value="HV"/>
 <part name="Q6" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R24" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="R25" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="P+7" library="SparkFun" deviceset="VCC" device="" value="LV"/>
-<part name="P+8" library="SparkFun" deviceset="VCC" device="" value="HV"/>
 <part name="Q7" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R26" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="R27" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="P+9" library="SparkFun" deviceset="VCC" device="" value="LV"/>
-<part name="P+10" library="SparkFun" deviceset="VCC" device="" value="HV"/>
 <part name="Q8" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="BSS138"/>
 <part name="R28" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
 <part name="R29" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10K"/>
-<part name="P+11" library="SparkFun" deviceset="VCC" device="" value="LV"/>
-<part name="P+12" library="SparkFun" deviceset="VCC" device="" value="HV"/>
 </parts>
 <sheets>
 <sheet>
@@ -20513,39 +20484,29 @@ Added by Rob Johnson
 </instance>
 <instance part="R20" gate="G$1" x="269.24" y="152.4" rot="R270"/>
 <instance part="R21" gate="G$1" x="284.48" y="152.4" rot="R270"/>
-<instance part="P+2" gate="1" x="269.24" y="162.56"/>
-<instance part="P+3" gate="1" x="284.48" y="162.56"/>
 <instance part="Q5" gate="G$1" x="276.86" y="109.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="273.05" y="114.046" size="1.778" layer="95"/>
 <attribute name="VALUE" x="271.526" y="103.632" size="1.778" layer="96"/>
 </instance>
 <instance part="R22" gate="G$1" x="269.24" y="116.84" rot="R270"/>
 <instance part="R23" gate="G$1" x="284.48" y="116.84" rot="R270"/>
-<instance part="P+5" gate="1" x="269.24" y="127"/>
-<instance part="P+6" gate="1" x="284.48" y="127"/>
 <instance part="Q6" gate="G$1" x="276.86" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="273.05" y="81.026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="271.526" y="70.612" size="1.778" layer="96"/>
 </instance>
 <instance part="R24" gate="G$1" x="269.24" y="83.82" rot="R270"/>
 <instance part="R25" gate="G$1" x="284.48" y="83.82" rot="R270"/>
-<instance part="P+7" gate="1" x="269.24" y="93.98"/>
-<instance part="P+8" gate="1" x="284.48" y="93.98"/>
 <instance part="Q7" gate="G$1" x="276.86" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="273.05" y="48.006" size="1.778" layer="95"/>
 <attribute name="VALUE" x="271.526" y="37.592" size="1.778" layer="96"/>
 </instance>
 <instance part="R26" gate="G$1" x="269.24" y="50.8" rot="R270"/>
 <instance part="R27" gate="G$1" x="284.48" y="50.8" rot="R270"/>
-<instance part="P+9" gate="1" x="269.24" y="60.96"/>
-<instance part="P+10" gate="1" x="284.48" y="60.96"/>
 <instance part="Q8" gate="G$1" x="276.86" y="10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="273.05" y="14.986" size="1.778" layer="95"/>
 </instance>
 <instance part="R28" gate="G$1" x="269.24" y="17.78" rot="R270"/>
 <instance part="R29" gate="G$1" x="284.48" y="17.78" rot="R270"/>
-<instance part="P+11" gate="1" x="269.24" y="27.94"/>
-<instance part="P+12" gate="1" x="284.48" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -20649,13 +20610,43 @@ Added by Rob Johnson
 </segment>
 <segment>
 <wire x1="269.24" y1="157.48" x2="269.24" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="160.02" x2="269.24" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="152.4" x2="276.86" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="160.02" x2="269.24" y2="160.02" width="0.1524" layer="91"/>
-<junction x="269.24" y="160.02"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<pinref part="P+2" gate="1" pin="VCC"/>
 <pinref part="Q4" gate="G$1" pin="G"/>
+<label x="269.24" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="269.24" y1="121.92" x2="269.24" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="116.84" x2="276.86" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="124.46" x2="269.24" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<label x="269.24" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="269.24" y1="88.9" x2="269.24" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="83.82" x2="276.86" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="91.44" x2="269.24" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="Q6" gate="G$1" pin="G"/>
+<label x="274.32" y="93.98" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="269.24" y1="55.88" x2="269.24" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="50.8" x2="276.86" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="58.42" x2="269.24" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="Q7" gate="G$1" pin="G"/>
+<label x="269.24" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="269.24" y1="22.86" x2="269.24" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="17.78" x2="276.86" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="25.4" x2="269.24" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="Q8" gate="G$1" pin="G"/>
+<label x="269.24" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -21454,6 +21445,31 @@ Added by Rob Johnson
 <pinref part="S1" gate="1" pin="S"/>
 <wire x1="48.26" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="157.48" x2="284.48" y2="162.56" width="0.1524" layer="91"/>
+<label x="284.48" y="160.02" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="121.92" x2="284.48" y2="127" width="0.1524" layer="91"/>
+<label x="284.48" y="121.92" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="88.9" x2="284.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="281.94" y="93.98" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="55.88" x2="284.48" y2="60.96" width="0.1524" layer="91"/>
+<label x="284.48" y="55.88" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="22.86" x2="284.48" y2="27.94" width="0.1524" layer="91"/>
+<label x="284.48" y="22.86" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="RTS" class="0">
 <segment>
@@ -21510,48 +21526,6 @@ Added by Rob Johnson
 <pinref part="SJ4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="LV" class="0">
-<segment>
-<wire x1="269.24" y1="121.92" x2="269.24" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="124.46" x2="269.24" y2="127" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="116.84" x2="276.86" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="124.46" x2="269.24" y2="124.46" width="0.1524" layer="91"/>
-<junction x="269.24" y="124.46"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="P+5" gate="1" pin="VCC"/>
-<pinref part="Q5" gate="G$1" pin="G"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="88.9" x2="269.24" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="91.44" x2="269.24" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="83.82" x2="276.86" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="91.44" x2="269.24" y2="91.44" width="0.1524" layer="91"/>
-<junction x="269.24" y="91.44"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<pinref part="P+7" gate="1" pin="VCC"/>
-<pinref part="Q6" gate="G$1" pin="G"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="55.88" x2="269.24" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="58.42" x2="269.24" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="50.8" x2="276.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="58.42" x2="269.24" y2="58.42" width="0.1524" layer="91"/>
-<junction x="269.24" y="58.42"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<pinref part="P+9" gate="1" pin="VCC"/>
-<pinref part="Q7" gate="G$1" pin="G"/>
-</segment>
-<segment>
-<wire x1="269.24" y1="22.86" x2="269.24" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="25.4" x2="269.24" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="17.78" x2="276.86" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="25.4" x2="269.24" y2="25.4" width="0.1524" layer="91"/>
-<junction x="269.24" y="25.4"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<pinref part="P+11" gate="1" pin="VCC"/>
-<pinref part="Q8" gate="G$1" pin="G"/>
-</segment>
-</net>
 <net name="GPIO5_OUT" class="0">
 <segment>
 <wire x1="281.94" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
@@ -21566,33 +21540,6 @@ Added by Rob Johnson
 <pinref part="JP3" gate="G$1" pin="3"/>
 <wire x1="193.04" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
 <label x="187.96" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="HV" class="0">
-<segment>
-<wire x1="284.48" y1="157.48" x2="284.48" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<pinref part="P+3" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="284.48" y1="121.92" x2="284.48" y2="127" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<pinref part="P+6" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="284.48" y1="88.9" x2="284.48" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="P+8" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="284.48" y1="55.88" x2="284.48" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="P+10" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="284.48" y1="22.86" x2="284.48" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<pinref part="P+12" gate="1" pin="VCC"/>
 </segment>
 </net>
 <net name="GPIO13_OUT" class="0">
